@@ -30,7 +30,7 @@
             font-family: 'Arial', sans-serif
              }
        .background-image {
-    background-image: url('img/mac.jpg');
+    background-image: url('img/medicine.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,9 +43,9 @@
     
   
   
-    <nav class="navbar navbar-expand-lg "  style="background-color: #b497acff;" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg "  style="background-color: #a6aec8ff;" data-bs-theme="light">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">MY <i class="fa-solid fa-heart text-danger"></i> COSMETICS</a>
+    <a class="navbar-brand fw-bold" href="#">MY <i class="fa-solid fa-heart text-danger"></i> PARAPHARM</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -63,10 +63,12 @@
             Categories
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Makeup</a></li>
-            <li><a class="dropdown-item" href="#">Skincare</a></li>
+            
+            <li><a class="dropdown-item" href="#">Skin care & Cosmetics</a></li>
+              <li><a class="dropdown-item" href="#">Body & Hair treatment</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Perfume</a></li>
+            <li><a class="dropdown-item" href="#"> Food supplements</a></li>
+            <li><a class="dropdown-item" href="#"> Medical équipment</a></li>
           </ul>
         </li>
         <li class="nav-item">
