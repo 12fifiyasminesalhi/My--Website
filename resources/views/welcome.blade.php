@@ -10,10 +10,7 @@
 <body>
     
     <style>
-        body {
-            background-color: #e19fccff;
-         
-        }
+        
         .navbar .nav-link {
     font-size: 28px;
   }
@@ -30,7 +27,7 @@
             font-family: 'Arial', sans-serif
              }
        .background-image {
-    background-image: url('img/medicine.jpg');
+    background-image: url('img/medecine 1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,9 +38,10 @@
         </style>
       
     
+ 
+
   
-  
-    <nav class="navbar navbar-expand-lg "  style="background-color: #a6aec8ff;" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg "  style="background-color: #a9c5d7ff;" data-bs-theme="light">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="#">MY <i class="fa-solid fa-heart text-danger"></i> PARAPHARM</a>
 
@@ -75,11 +73,25 @@
           <a class="nav-link disabled" aria-disabled="true">Help</a>
         </li>
       </ul>
-      <form class="d-flex w-90" role="register">
-        
-       <button type="button" class="btn btn-light btn-lg me-2">register</button>
-         <button type="button" class="btn btn-light btn-lg">Login</button>
-      </form>
+      <ul class="navbar-nav ms-auto">
+    @if (Route::has('login'))
+        @auth
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/home') }}">Home</a>
+            </li>
+        @else
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('login') }}">Login</a>
+            </li>
+
+            @if (Route::has('register'))
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">Register</a>
+                </li>
+            @endif
+        @endauth
+    @endif
+</ul>
     </div>
   </div>
 </nav>
@@ -88,6 +100,7 @@
   <div class="background-image">
    
 </div>
+
       
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
