@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
+    <style>
+        h1 {
+          position: relative;
+          display: inline-block; 
+          font-size: 3rem;
+        margin-right: auto;
+      margin-bottom:50px;}
+
+  
+       p {
+          font-size: 1.9rem; }
+           p::after {
+          content: "";
+          display: block;
+          width: 900px;      
+          height: 3px;     
+          background: white; 
+          margin: 10px auto 0;}
+         
+  </style> 
 </head>
 
 <body>
@@ -36,8 +55,7 @@
     background-repeat: no-repeat;
     height: 100vh;
 }   
-    
-
+   
  
         </style>
 
@@ -100,7 +118,9 @@
 
  
   <div class="background-image">
-    <h1 class="text-center text-white">Bienvenue sur mon site 🌼</h1>
+    <h1 class="text-center text-white">Your❤️Parapharm</h1>
+  
+    <p class="text-center text-white">Découvrez une large gamme de produits parapharmaceutiques sélectionnés avec soin : soins du visage, compléments alimentaires, hygiène, bébé et bien-être.</p>
   
    </div>
    <!-- <div class="image-container">
