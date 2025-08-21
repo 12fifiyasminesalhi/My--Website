@@ -5,27 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background: url('{{ asset("img/product.jpg") }}') no-repeat center center/cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color:white ;
-            font-size: 2rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px black; /* pour rendre le texte lisible */
-        }
-    </style>
-     
-
+   
 </head>
+
 <body>
    
-    
     <style>
         
         .navbar .nav-link {
@@ -50,15 +34,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
 }   
     
 
  
         </style>
-      
-    
- 
 
   
     <nav class="navbar navbar-expand-lg "  >
@@ -119,12 +100,13 @@
 
  
   <div class="background-image">
+    <h1 class="text-center text-white">Bienvenue sur mon site 🌼</h1>
   
    </div>
-   <div class="hero">
-        Bienvenue sur mon site médical 🏥
-    </div>
-
+   <!-- <div class="image-container">
+    <img src="{{ asset('img/product.jpg') }}" alt="Médecine">
+    <div class="texte-sur-image">Bienvenue sur mon site </div>
+</div> -->
       
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
